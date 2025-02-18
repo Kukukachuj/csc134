@@ -1,21 +1,37 @@
+/*
+CSC 134
+M2HW1(Question 3) - Silver
+James Moore
+02/8/2025
+
+Summary:
+This program calculates the number of pizza slices left after a party. 
+*/
+
 #include <iostream>
 
 using namespace std;
 
-main()
+int main()
 {
-const int SLICES_PER_PIZZA = 8;
-int orderAmt, visitorAmt, slicesLeft; 
+    // Declare constants and variables
+    const int SLICES_PER_PIZZA = 8;
+    int orderAmt, visitorAmt, slicesLeft; 
 
-cout << "How many pizza\'s have been ordered?: ";
-cin >> orderAmt;
-cout << "Enter the amount of guests: ";
-cin >> visitorAmt;
+    // Get the number of pizzas ordered
+    cout << "How many pizza's have been ordered?: ";
+    cin >> orderAmt;
 
-slicesLeft = (orderAmt * 8) - (visitorAmt * 3);
+    // Get the number of guests
+    cout << "Enter the amount of guests: ";
+    cin >> visitorAmt;
 
-cout << " Your party will have " << slicesLeft << " slices left";
+    // Calculate the number of slices left
+    slicesLeft = (orderAmt * SLICES_PER_PIZZA) - (visitorAmt * 3);
 
-return 0;
+    // Display the number of slices left
+    cout << "Your party will have " << slicesLeft << " slices left";
+
+    // End the program
+    return 0;
 }
-
