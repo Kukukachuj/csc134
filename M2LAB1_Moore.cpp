@@ -1,3 +1,10 @@
+/*
+CSC-134
+M2LAB1
+James Moore
+02/27/2025
+*/
+
 #include <iostream>
 #include <iomanip>
 using namespace std;
