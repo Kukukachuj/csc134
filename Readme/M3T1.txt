@@ -1,0 +1,13 @@
+=============================================================================================
+For this assignment you will create a program to match the following specifications.
+Ask the user to enter the length and width of two rectangles, then display the area of both.
+=============================================================================================
+PSEUDOCODE
+1. Ask the user to enter the length and width of the first rectangle.
+2. Ask the user to enter the length and width of the second rectangle.
+3. Calculate the area of the first rectangle.
+4. Calculate the area of the second rectangle.
+5. Display the area of both rectangles.
+=============================================================================================
+EXAMPLE OUTPUT
+Enter the length and width of the first rectangle: 5 10 
