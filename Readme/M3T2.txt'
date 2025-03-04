@@ -1,0 +1,13 @@
+=====================================================================================
+This program builds on the M3T1 program. 
+For this assignment you will create a program to match the following specifications.
+
+1. Ask the user to enter the length and width of two rectangles, 
+2. display the area of both.
+3. Tell the user which rectangle has the larger area, or if they are the same area.
+=====================================================================================
+PSEUDOCODE
+1. initialize integers lenghtOne,LenghtTwo,widhtOne, widthTwo , areaOne, areaTwo
+2. input rectangle one's l
+
+

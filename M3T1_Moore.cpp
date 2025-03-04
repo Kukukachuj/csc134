@@ -13,7 +13,7 @@ int main()
 {
     // Declare variables for the dimentionsd of the rectangles
     int lengthOne, widthOne, lengthTwo, widthTwo; 
-    double areaOne, areaTwo; 
+    int areaOne, areaTwo; 
     // Input of the first rectangle
     cout << "Enter the length and width of the first rectangle." << endl;
     cout << "Length: ";
@@ -29,8 +29,6 @@ int main()
     // Calculation to get the area per rectsangle (L * W)
     areaOne = lengthOne * widthOne;
     areaTwo = lengthTwo * widthTwo;
-    // Sets the decimal place to two.
-    cout << fixed << setprecision(2);
     // Output of the area for each rectangle.
     cout << "The area of the first rectangle is " << areaOne << endl;
     cout << "The area of the second rectangle is " << areaTwo;
