@@ -1,3 +1,10 @@
+/*
+CSC 134
+M5T1
+James Moore
+DATE:4/5/25
+*/
+
 #include <iostream>
 #include <string>
 using namespace std;
