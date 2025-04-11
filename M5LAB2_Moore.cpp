@@ -43,6 +43,7 @@ int main()
 {
 	// This program calculates the area of a rectangle.
 	// TODO: fix any syntax errors
+    
 	
    double length, width, area;    // The rectangle's lengthwidth,     // The rectangle's width
               // The rectangle's area

@@ -33,7 +33,7 @@ void lostWalletMystery(string userName) {
 
 /*  Function to print the "Neighborhood Riddle" story
     1. Print the introduction to the puzzle with the user's name
-    2. Continue with the story details and clues
+   
 */
 void neighborhoodRiddle(string userName) {
     cout << userName <<" found a mysterious note under his welcome mat:" << endl;
@@ -47,7 +47,7 @@ void neighborhoodRiddle(string userName) {
 
 /* Function to print the "Unexpected Road Trip" story
     1. Display a header for the road trip story
-    2. Continue with a multi-part story using the user's name
+    2. Continue with a story using the user's name
 */
 void roadTrip(string userName) {
     cout << "\"--------The Unexpected Road Trip------\"" << endl;
