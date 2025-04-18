@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": false,
-      "cwd": "/workspaces/csc134/Examples and notes",
-      "program": "/workspaces/csc134/Examples and notes/build/Debug/outDebug",
+      "cwd": "/workspaces/csc134",
+      "program": "/workspaces/csc134/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
