@@ -80,7 +80,7 @@ int hyperrectangleVolume(){
 }
 
 
-int question3(){
+int romanNumeral(){
     int number;
     string answer;
 
@@ -115,7 +115,7 @@ cout << "The Roman numeral version of " << number << " is " << answer << "." << 
     return 0;
 }
 bool leaveProgram = false;
-int question4(){
+int geometryCalculator(){
     while (leaveProgram == false){
         string choice;
         cout << "Geometry Calculator" << endl;
@@ -166,7 +166,7 @@ int question4(){
         return 0;
 }
 
-int question5(){
+int vehicalSpeed(){
     int mph, timeTraveled, distance;
 
     cout << "Speed of vehical in (MPH): ";
