@@ -14,15 +14,15 @@ using namespace std;
 int averageRainfall(){
     string monthOne, monthTwo, monthThree;
     double rainfallOne, rainfallTwo, rainfallThree, avgRain, totalRain;
-    cout << "Enter month: ";
+    cout << "Enter first month: ";
     cin >> monthOne;
     cout << "Enter rainfall for " << monthOne << ": ";
     cin >> rainfallOne;
-    cout << "Enter month: ";
+    cout << "Enter second month: ";
     cin >> monthTwo;
     cout << "Enter rainfall for " << monthTwo << ": ";
     cin >> rainfallTwo;
-    cout << "Enter month: ";
+    cout << "Enter third month: ";
     cin >> monthThree;
     cout << "Enter rainfall for " << monthThree << ": ";
     cin >> rainfallThree;
@@ -31,7 +31,7 @@ int averageRainfall(){
     avgRain = totalRain / 3;
 
     cout << "The average rainfall for " << monthOne << ", " << monthTwo << ", and " << monthThree
-         << " is " << fixed << setprecision(2) << avgRain << " inches.";
+         << " is " << fixed << setprecision(2) << avgRain << " inches." << endl;
 
     return 0;
 }
@@ -78,7 +78,6 @@ int hyperrectangleVolume(){
     
     return 0;
 }
-
 
 int romanNumeral(){
     int number;
@@ -185,7 +184,8 @@ int vehicalSpeed(){
 }
 
 int main(){
-
+int mainChoice; 
+while (mainChoice != 6){
     cout << "----------MENU----------" << endl;
     cout << "1) Calculate Average Rainfall " << endl;
     cout << "2) Calculate volume of a hyperrectangle " << endl;
@@ -193,7 +193,28 @@ int main(){
     cout << "4) Geometry Calculator " << endl;
     cout << "5) Distance Traveled" << endl;
     cout << "6) Exit " << endl;
+    cout << "Enter Choice: ";
+    cin >> mainChoice;
 
+        if (mainChoice = 1 ){
+            averageRainfall();
+        }
+        else if(mainChoice = 2){
+            hyperrectangleVolume();
+        }
+        else if(mainChoice = 3){
+            romanNumeral();
+        }
+        else if(mainChoice = 4){
+            geometryCalculator();
+        }
+        else if(mainChoice = 5){
+            vehicalSpeed();
+        }
+        else{
+            cout << "Wrong selection please select 1 - 6" << endl;
+        }
+    }
 
 
  
