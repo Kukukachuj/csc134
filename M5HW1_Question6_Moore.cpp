@@ -7,7 +7,9 @@ DATE:
 
 #include <iostream>
 #include <iomanip>
+#include <cmath>
 using namespace std;
+
 
 int averageRainfall(){
     string monthOne, monthTwo, monthThree;
@@ -112,13 +114,74 @@ cout << "The Roman numeral version of " << number << " is " << answer << "." << 
 
     return 0;
 }
-
+bool leaveProgram = false;
 int question4(){
-    cout << "Fill Later";
+    while (leaveProgram == false){
+        string choice;
+        cout << "Geometry Calculator" << endl;
+        cout << "1. Calculate the Area of a Circle" << endl;
+        cout << "2. Calculate the Area of a Rectangle" << endl;
+        cout << "3. Calculate the Area of a Triangle" << endl;
+        cout << "4. Quit" << endl;
+        cout << "Enter your choice (1-4): ";
+        cin >> choice;
+    
+        if (choice == "1" ){
+            double radius, circleArea;
+            const  double PIE = 3.14159;
+            cout << "What is the radius of the circle: " << endl;
+            cin >> radius;
+            circleArea = PIE*(sqrt(radius));
+            cout << "Area: " << circleArea << endl;;
+        }
+    
+        else if(choice == "2"){
+            int length, width, rectangleArea;
+            cout << "Enter the length: ";
+            cin >> length;
+            cout << "Enter the width: ";
+            cin >> width;
+            rectangleArea = length * width;
+            cout << "Area: " << rectangleArea << endl;
+        }
+    
+        else if(choice == "3"){
+            double base, height, triangleArea;
+            cout << "Enter  the triangles base: ";
+            cin >> base;
+            cout << "Enter the height: ";
+            cin >> height;
+            triangleArea = base * height * 0.5;
+            cout << triangleArea << endl;
+        }
+    
+        else if(choice == "4"){
+            leaveProgram = true;
+        }
+    
+        else{
+            cout << "Invalid Option" << endl;
+        }
+    } 
+        return 0;
 }
 
 int question5(){
-    cout << "Fill Later";
+    int mph, timeTraveled, distance;
+
+    cout << "Speed of vehical in (MPH): ";
+    cin >> mph;
+    cout << "How many hours traveled?: ";
+    cin >> timeTraveled;
+    cout << "Hour Distance Traveled" << endl;
+    cout << "--------------------------------" << endl;
+
+    for (int i = 1; i < timeTraveled +1 ; i++){ 
+        distance = mph * i;
+        cout << i << "              " << distance << endl;
+    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+    return 0;
 }
 
 int main(){
@@ -127,8 +190,9 @@ int main(){
     cout << "1) Calculate Average Rainfall " << endl;
     cout << "2) Calculate volume of a hyperrectangle " << endl;
     cout << "3) Roman numeral Conversion " << endl;
-    cout << "4) " << endl;
-    cout << "5) " << endl;
+    cout << "4) Geometry Calculator " << endl;
+    cout << "5) Distance Traveled" << endl;
+    cout << "6) Exit " << endl;
 
 
 
