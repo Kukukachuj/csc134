@@ -1,9 +1,39 @@
-/*
-CSC 134
-Assignment
-James Moore
-DATE:
-*/
+/**
+ * CSC 134
+ * M5HW1_Question6
+ * Author: James Moore
+ * Date: 4/19/2025
+ * 
+ * This program provides a menu-driven application that performs various tasks:
+ * 
+ * 1. Calculate Average Rainfall:
+ *    - Prompts the user to enter the names of three months and their respective rainfall amounts.
+ *    - Calculates and displays the average rainfall for the three months.
+ * 
+ * 2. Calculate Volume of a Hyperrectangle:
+ *    - Prompts the user to enter the width, length, and height of a hyperrectangle.
+ *    - Validates that the dimensions are positive values.
+ *    - Calculates and displays the volume of the hyperrectangle.
+ * 
+ * 3. Roman Numeral Conversion:
+ *    - Prompts the user to enter a number between 1 and 10.
+ *    - Converts the number to its Roman numeral equivalent and displays the result.
+ * 
+ * 4. Geometry Calculator:
+ *    - Provides options to calculate the area of a circle, rectangle, or triangle.
+ *    - Prompts the user for the necessary dimensions and performs the calculations.
+ *    - Allows the user to quit the geometry calculator.
+ * 
+ * 5. Distance Traveled:
+ *    - Prompts the user to enter the speed of a vehicle (in MPH) and the time traveled (in hours).
+ *    - Displays the distance traveled for each hour.
+ * 
+ * 6. Exit:
+ *    - Exits the program.
+ * 
+ * The program uses a main menu to allow the user to select one of the above options.
+ * Input validation is performed where necessary to ensure correct operation.
+ */
 
 #include <iostream>
 #include <iomanip>
@@ -196,27 +226,27 @@ while (mainChoice != 6){
     cout << "Enter Choice: ";
     cin >> mainChoice;
 
-        if (mainChoice = 1 ){
+        if (mainChoice == 1 ){
             averageRainfall();
         }
-        else if(mainChoice = 2){
+        else if(mainChoice== 2){
             hyperrectangleVolume();
         }
-        else if(mainChoice = 3){
+        else if(mainChoice == 3){
             romanNumeral();
         }
-        else if(mainChoice = 4){
+        else if(mainChoice == 4){
             geometryCalculator();
         }
-        else if(mainChoice = 5){
+        else if(mainChoice == 5){
             vehicalSpeed();
+        }
+        else if(mainChoice == 6){
+            cout << "Program Done";
         }
         else{
             cout << "Wrong selection please select 1 - 6" << endl;
         }
     }
-
-
- 
     return 0;
 }
